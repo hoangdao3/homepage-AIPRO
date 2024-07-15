@@ -1,0 +1,71 @@
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slideInFromTop {
+  animation: slideInFromTop 0.8s ease-out forwards;
+}
+
+.scaleIn {
+  animation: scaleIn 0.8s ease-out forwards;
+}
+
+.recruitmentSection {
+  position: relative;
+  z-index: 1;
+  margin-top: 2rem; /* Add margin to ensure it doesn't overlap with other sections */
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconAndNumber {
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #f0f0f0; /* Adjust background color as needed */
+  margin-right: 0.5rem;
+}
+
+.iconAndNumber img {
+  margin: 0;
+}
+
+.background {
+  background: url('/your-background-image.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.textContainer {
+  margin-right: 20px; /* Adjust this margin to move the text closer to the image */
+  text-align: left;
+}
