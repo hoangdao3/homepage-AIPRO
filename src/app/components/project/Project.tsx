@@ -1,13 +1,23 @@
 "use client"
 import React, { useState, useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
 
-const ProjectShowcase = ({ projects }) => {
-  const [selectedProject, setSelectedProject] = useState(projects[0]);
-  const [currentVisibleIndex, setCurrentVisibleIndex] = useState(0);
-  const listRef = useRef();
+interface Project {
+  imageUrl: string;
+  title: string;
+  description: string;
+  productType: string;
+}
 
-  const handleThumbnailClick = (index) => {
+interface ProjectShowcaseProps {
+  projects: Project[];
+}
+
+const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ projects }) => {
+  const [selectedProject, setSelectedProject] = useState<Project>(projects[0]);
+  const [currentVisibleIndex, setCurrentVisibleIndex] = useState<number>(0);
+  const listRef = useRef<HTMLDivElement>(null);
+
+  const handleThumbnailClick = (index: number) => {
     setSelectedProject(projects[index]);
     let newIndex = currentVisibleIndex;
     if (index >= currentVisibleIndex + 2) {
@@ -18,7 +28,7 @@ const ProjectShowcase = ({ projects }) => {
     setCurrentVisibleIndex(newIndex);
   };
 
-  const scrollToIndex = (index) => {
+  const scrollToIndex = (index: number) => {
     if (listRef.current) {
       listRef.current.scrollTo({
         top: index * 150, // Adjust height based on your item size including margin
@@ -109,17 +119,6 @@ const ProjectShowcase = ({ projects }) => {
       </div>
     </div>
   );
-};
-
-ProjectShowcase.propTypes = {
-  projects: PropTypes.arrayOf(
-    PropTypes.shape({
-      imageUrl: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      productType: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 export default ProjectShowcase;
