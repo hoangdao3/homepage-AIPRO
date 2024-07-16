@@ -54,7 +54,7 @@ export function AboutUs() {
         </div>
         <div className="col-span-2 lg:pl-24">
           <h2 className="mb-4 text-6xl font-bold text-blue-gray-900">
-            Online Course
+          AI-PRO JOINT STOCK COMPANY
           </h2>
           <p className="mb-5 max-w-lg px-4 text-left text-lg text-gray-500 lg:px-0">
             In this comprehensive React Course, you&apos;ll delve into the world

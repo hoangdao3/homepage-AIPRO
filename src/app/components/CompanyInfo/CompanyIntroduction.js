@@ -41,7 +41,7 @@ const CompanyIntroduction = ({ imageUrl, title, description }) => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center p-10 space-x-10">
+    <div className="flex justify-center items-center p-10 space-x-10 mt-8" style={{ marginTop: '50px' }}>
       {/* Image Section */}
       <div
         ref={imageRef}

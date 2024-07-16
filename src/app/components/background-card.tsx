@@ -1,5 +1,4 @@
 import React from "react";
-import { Typography } from "@material-tailwind/react";
 
 interface BackgroundCardProps {
   title: string;
@@ -10,15 +9,12 @@ export function BackgroundCard({ title, children }: BackgroundCardProps) {
   return (
     <div className="grid place-items-center h-full px-8 py-6 bg-[#33A7BF] rounded-xl">
       <div>
-        <Typography variant="h2" className="text-center" color="white">
+        <h2 className="text-center text-white text-2xl font-bold">
           {title}
-        </Typography>
-        <Typography
-          color="white"
-          className="my-2 text-base w-full text-center font-normal"
-        >
+        </h2>
+        <p className="my-2 text-base w-full text-center text-white font-normal">
           {children}
-        </Typography>
+        </p>
       </div>
     </div>
   );
