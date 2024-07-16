@@ -8,39 +8,39 @@ export default function Linh() {
     <>
       <Navbar />
       <HeroSection
-        title="Lĩnh vực hoạt động"
-        description="Công ty Cổ phần Đầu tư Tổng hợp Hà Nội (SHN)"
-        backgroundImage="/sec1.png"
+        title="Business areas"
+        description="AI-PRO JOINT STOCK COMPANY"
+        videoSrc="/sec1Video.mp4"
       />
       <FeatureCard
         imageSrc="/anh1.png"
-        title="01. THƯƠNG MẠI, XUẤT NHẬP KHẨU HÀNG HÓA"
-        description="Kinh doanh thương mại là một trong những lĩnh vực mang lại nguồn doanh thu và lợi nhuận bền vững, ổn định cho SHN. Trong những năm gần đây, SHN đã trở thành nhà cung cấp uy tín nhiều mặt hàng, sản phẩm, nguyên vật liệu cho các đối tác trong và ngoài nước."
-        buttonText="Tìm hiểu thêm"
+        title="01. AI Development"
+        description="AI-PRO specializes in cutting-edge AI development, delivering innovative solutions that drive efficiency and growth for our clients in various industries."
+        buttonText="Learn More"
         buttonLink="#"
         imagePosition={1}
       />
       <FeatureCard
         imageSrc="/anh2.png"
-        title="02. ĐẦU TƯ PHÁT TRIỂN DỰ ÁN"
-        description="Lĩnh vực đầu tư phát triển dự án đã đóng góp giá trị lớn về lợi nhuận cho Công ty. SHN đã tham gia đầu tư vào các dự án đầu tư kinh doanh bất động sản."
-        buttonText="Tìm hiểu thêm"
+        title="02. OCR"
+        description="Our OCR technology streamlines data extraction from documents, enhancing accuracy and saving time for businesses in need of efficient data management."
+        buttonText="Learn More"
         buttonLink="#"
         imagePosition={2}
-      />{" "}
+      />
       <FeatureCard
         imageSrc="/anh3.png"
-        title="01. THƯƠNG MẠI, XUẤT NHẬP KHẨU HÀNG HÓA"
-        description="Kinh doanh thương mại là một trong những lĩnh vực mang lại nguồn doanh thu và lợi nhuận bền vững, ổn định cho SHN. Trong những năm gần đây, SHN đã trở thành nhà cung cấp uy tín nhiều mặt hàng, sản phẩm, nguyên vật liệu cho các đối tác trong và ngoài nước."
-        buttonText="Tìm hiểu thêm"
+        title="03. ChatGPT Development"
+        description="AI-PRO excels in developing advanced ChatGPT solutions, enabling intelligent and seamless communication for customer service, virtual assistants, and more."
+        buttonText="Learn More"
         buttonLink="#"
         imagePosition={1}
       />
       <FeatureCard
-        imageSrc="/anh4.png"
-        title="02. ĐẦU TƯ PHÁT TRIỂN DỰ ÁN"
-        description="Lĩnh vực đầu tư phát triển dự án đã đóng góp giá trị lớn về lợi nhuận cho Công ty. SHN đã tham gia đầu tư vào các dự án đầu tư kinh doanh bất động sản."
-        buttonText="Tìm hiểu thêm"
+        imageSrc="/anh4.jpg"
+        title="04. Web and App Development"
+        description="Our team creates high-quality web and mobile applications, tailored to meet the unique needs of businesses and enhance user experiences."
+        buttonText="Learn More"
         buttonLink="#"
         imagePosition={2}
       />

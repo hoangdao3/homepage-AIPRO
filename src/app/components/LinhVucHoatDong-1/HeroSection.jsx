@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
+import styles from './heroSection.module.css'; // Import the CSS module
 
-const HeroSection = ({ title, description, backgroundImage }) => {
+const HeroSection = ({ title, description, videoSrc }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -31,9 +32,16 @@ const HeroSection = ({ title, description, backgroundImage }) => {
       ref={sectionRef}
       className={`relative w-full h-[300px] bg-cover bg-center flex items-center justify-center ${
         isVisible ? 'animate-appear' : 'animate-disappear'
-      }`}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      } ${styles['hero-section']}`} // Added CSS class here
     >
+      <video
+        autoPlay
+        muted
+        loop
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src={videoSrc} type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
         <h1 className="text-white text-4xl font-bold mb-2">{title}</h1>
         <p className="text-white text-lg">{description}</p>

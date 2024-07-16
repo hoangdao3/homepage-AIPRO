@@ -1,5 +1,6 @@
 .footer {
-    background-image: url('/background.jpg');
+    /* background-image: url('/background.jpg'); */
+    background-color: red;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -8,9 +8,9 @@ export default function Contact() {
     <>
       <Navbar />
       <HeroSection
-        title="Liên hệ"
-        description="Liên hệ với SHN để trở thành đối tác của chúng tôi"
-        backgroundImage="/sec1.png"
+        title="Contact"
+        description="Contact SHN to become our partner"
+        videoSrc="/sec1Video.mp4"
       />
       <ContactInfo/>
       <CollaborationForm/>

@@ -51,18 +51,18 @@ const CollaborationForm = () => {
           transition={{ duration: 0.5 }}
           className="w-full md:w-1/4 p-4 md:ml-4"
         >
-          <h2 className="text-3xl font-bold mb-4 text-center">Hợp tác cùng phát triển</h2>
-          <p className="mb-4 text-left">Nếu bạn muốn hợp tác phát triển hoặc trở thành khách hàng, vui lòng nhập các thông tin cần thiết và chờ phản hồi từ chúng tôi.</p>
+          <h2 className="text-3xl font-bold mb-4 text-center">COOPERATION FOR DEVELOPMENT</h2>
+          <p className="mb-4 text-left">If you want to cooperate in development or become a customer, please enter the necessary information and wait for a response from us.</p>
           <form className="space-y-4">
             <input
               type="text"
-              placeholder="Họ và tên"
+              placeholder="Full name"
               className="w-full px-4 py-2 border border-white rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
             />
             <div className="flex space-x-4">
               <input
                 type="text"
-                placeholder="Số điện thoại"
+                placeholder="Phone Number"
                 className="w-1/2 px-4 py-2 border border-white rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
               />
               <input
@@ -72,7 +72,7 @@ const CollaborationForm = () => {
               />
             </div>
             <textarea
-              placeholder="Nội dung"
+              placeholder="Content"
               className="w-full px-4 py-2 border border-white rounded-md bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
               rows="4"
             ></textarea>
@@ -80,7 +80,7 @@ const CollaborationForm = () => {
               type="submit"
               className="w-full px-4 py-2 bg-white text-red-700 rounded-md hover:bg-gray-300 transition duration-300"
             >
-              Gửi thông tin
+              Send information
             </button>
           </form>
         </motion.div>

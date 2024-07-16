@@ -68,7 +68,7 @@ export default function Contact() {
       <HeroSection
         title="Dự án"
         description="Công ty Cổ phần Đầu tư Tổng hợp Hà Nội (SHN)"
-        backgroundImage="/sec1.png"
+        videoSrc="/sec1Video.mp4"
       />
       <ProjectShowcase projects={projects} />;
       <Footer />

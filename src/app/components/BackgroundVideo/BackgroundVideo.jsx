@@ -1,46 +1,37 @@
-"use client"
+"use client";
 import { useRef, useEffect, useState } from 'react';
 
-const BackgroundVideo = () => {
+const BackgroundImage = () => {
   const [loaded, setLoaded] = useState(false);
-  const videoRef = useRef(null);
+  const imgRef = useRef(null);
 
   useEffect(() => {
     const handleLoadedData = () => {
       setLoaded(true);
     };
-    if (videoRef.current) {
-      videoRef.current.addEventListener('loadeddata', handleLoadedData);
+    if (imgRef.current) {
+      imgRef.current.addEventListener('load', handleLoadedData);
       return () => {
-        videoRef.current.removeEventListener('loadeddata', handleLoadedData);
+        imgRef.current.removeEventListener('load', handleLoadedData);
       };
     }
   }, []);
-
-  const handleRestartVideo = () => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0;
-      videoRef.current.play();
-    }
-  };
 
   return (
     <>
       <div className={`carousel w-full ${loaded ? 'fade-in' : ''}`}>
         <div id="slide1" className="carousel-item relative w-full">
-          <video
-            ref={videoRef}
-            src="/background-video.mp4"
+          <img
+            ref={imgRef}
+            src="/event.jpeg"
             className="w-full"
-            loop
-            muted
-            autoPlay
+            alt="Event"
           />
           <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <a href="/#" className="btn btn-circle" onClick={handleRestartVideo}>
+            <a href="/#" className="btn btn-circle">
               ❮
             </a>
-            <a href="/#" className="btn btn-circle" onClick={handleRestartVideo}>
+            <a href="/#" className="btn btn-circle">
               ❯
             </a>
           </div>
@@ -50,4 +41,4 @@ const BackgroundVideo = () => {
   );
 };
 
-export default BackgroundVideo;
+export default BackgroundImage;

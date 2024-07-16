@@ -64,13 +64,13 @@ const ContactInfo = () => {
             <img src="/redAddress.png" alt="Address" className="w-8 h-8 mr-2" />
             <div>
               <h3 className="text-lg font-semibold" style={{ fontSize: '20px', fontFamily: 'Arial, sans-serif' }}>Địa chỉ</h3>
-              <p className="text-base">Tầng 7, Tòa nhà Peakview, 36 Hoàng Cầu, Phường Ô Chợ Dừa, Quận Đống Đa, Thành phố Hà Nội</p>
+              <p className="text-base">7, Alley 82, Dich Vong Hau Street, Dich Vong Ward, Cau Giay District, Hanoi City, Vietnam</p>
             </div>
           </div>
           <div className="mb-4 flex items-center">
             <img src="/phone.png" alt="Phone" className="w-8 h-8 mr-2" />
             <div>
-              <h3 className="text-lg font-semibold">Điện thoại</h3>
+              <h3 className="text-lg font-semibold">Phone</h3>
               <p className="text-base">(84 - 24) 66526332</p>
             </div>
           </div>

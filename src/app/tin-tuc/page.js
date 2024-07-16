@@ -142,7 +142,7 @@ export default function News() {
       <HeroSection
         title="Tin tức"
         description="Cập nhật những thông tin mới nhất tại SHN"
-        backgroundImage="/sec1.png"
+        videoSrc="/sec1Video.mp4"
       />
       <NewsGrid mainNews={mainNews} mostViewed={mostViewed}categories={categories} />;
       <Footer />

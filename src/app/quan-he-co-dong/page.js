@@ -10,7 +10,7 @@ export default function Contact() {
       <HeroSection
         title="Quan hệ cổ đông"
         description="Công ty Cổ phần Đầu tư Tổng hợp Hà Nội (SHN)"
-        backgroundImage="/sec1.png"
+        videoSrc="/sec1Video.mp4"
       />
       <InformationDisclosure />
       <Footer />

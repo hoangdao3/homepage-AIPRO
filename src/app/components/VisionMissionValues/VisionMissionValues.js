@@ -45,9 +45,9 @@ const VisionMissionValues = () => {
           alt="Vision Icon"
           className="mx-auto mb-4 w-16"
         />
-        <h3 className="text-2xl font-semibold mb-2 text-left">TẦM NHÌN</h3>
+        <h3 className="text-2xl font-semibold mb-2 text-left">VISION</h3>
         <p className="text-lg leading-relaxed text-left">
-          SHN định hướng phát triển trở thành đơn vị kinh tế vững mạnh với uy tín và thương hiệu có sức cạnh tranh tốt trên thị trường trong nước và quốc tế.
+          AI-PRO strives to establish itself as a robust economic entity with a distinguished reputation and competitive brand presence in both domestic and global AI markets.
         </p>
       </div>
 
@@ -61,9 +61,9 @@ const VisionMissionValues = () => {
           alt="Mission Icon"
           className="mx-auto mb-4 w-16"
         />
-        <h3 className="text-2xl font-semibold mb-2 text-left">SỨ MỆNH</h3>
+        <h3 className="text-2xl font-semibold mb-2 text-left">MISSION</h3>
         <p className="text-lg leading-relaxed text-left">
-          Xây dựng và đóng góp những giá trị tốt đẹp cho xã hội, cho khách hàng, nâng cao chất lượng cuộc sống cho CBNV Công ty.
+        AI-PRO aims to build and contribute significant value to society and customers, enhancing the quality of life for our employees.
         </p>
       </div>
 
@@ -77,12 +77,12 @@ const VisionMissionValues = () => {
           alt="Values Icon"
           className="mx-auto mb-4 w-16"
         />
-        <h3 className="text-2xl font-semibold mb-2 text-left">GIÁ TRỊ CỐT LÕI</h3>
+        <h3 className="text-2xl font-semibold mb-2 text-left">CORE VALUES</h3>
         <p className="text-lg leading-relaxed text-left">
-          Đoàn kết – Hợp tác<br />
-          Tận tâm – Uy tín<br />
-          Hiệu quả – Chuyên nghiệp<br />
-          Sáng tạo – Đổi mới
+          Unity – Collaboration<br />
+          Dedication – Integrity<br />
+          Efficiency – Professionalism<br />
+          Creativity – Innovation
         </p>
       </div>
 

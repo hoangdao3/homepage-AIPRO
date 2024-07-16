@@ -5,13 +5,14 @@ import Footer from "./components/footer/Footer";
 import CollaborationForm from "./components/Contact/Contact";
 import BackgroundVideo from "./components/BackgroundVideo/BackgroundVideo";
 import "./globals.css"; // Import your global styles
+import Navbar2 from './components/header/Navbar3';
 
 const Home = () => {
   const videoRef = useRef(null);
 
   return (
     <>
-      <Navbar />
+      <Navbar2 />
       <div ref={videoRef}>
         <BackgroundVideo />
       </div>
