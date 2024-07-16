@@ -61,11 +61,11 @@ const RecruitmentSection = () => {
     <div id="recruitment-section" className={`container mx-auto p-6 ${styles.recruitmentSection}`}>
       <div className={`bg-white rounded-lg p-8 flex flex-col md:flex-row items-center ${styles.background}`}>
         <div className={`flex-1 ${isVisible ? styles.slideInFromTop : ''} ${styles.textContainer}`}>
-          <h2 className="text-red-600 mb-2 ml-32">Tuyển dụng</h2>
+          <h2 className="text-[#33A7BF] mb-2 ml-32">Tuyển dụng</h2>
           <h1 className="text-4xl font-bold mb-4 ml-32">Tham gia SHN -</h1>
           <h1 className="text-4xl font-bold mb-4 ml-32">Định hướng sự nghiệp</h1>
 
-          <a href="#" className="inline-block bg-red-500 text-white px-4 py-2 ml-32 rounded-md hover:bg-red-600 transition duration-300">
+          <a href="#" className="inline-block bg-[#33A7BF] text-white px-4 py-2 ml-32 rounded-md hover:tebgxt-[#33A7BF] transition duration-300">
             Tìm kiếm công việc
           </a>
         </div>

@@ -34,7 +34,7 @@ const VisionMissionValues = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-start p-10 space-x-8">
+    <div className="flex justify-center items-start p-10 space-x-8 style={{ marginTop: '1000px' }}">
       {/* Vision Section */}
       <div
         ref={(el) => (sectionRef.current[0] = el)}

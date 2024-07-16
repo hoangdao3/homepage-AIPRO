@@ -86,7 +86,7 @@
   }
 
   .searchButton {
-    background-color: #e74c3c;
+    background-color: #33A7BF;
     color: white;
     cursor: pointer;
   }
@@ -122,7 +122,7 @@
     transform: translateX(-50%);
     width: 120%;
     height: 5px;
-    background-color: #e74c3c;
+    background-color: #33A7BF;
   }
 
   .jobListings {
@@ -162,7 +162,7 @@
   }
 
   .urgent {
-    background-color: #e74c3c;
+    background-color: #33A7BF;
     color: white;
   }
 
@@ -197,6 +197,6 @@
   }
 
   .applyButton {
-    background-color: #e74c3c;
+    background-color: #33A7BF;
     color: white;
   }
