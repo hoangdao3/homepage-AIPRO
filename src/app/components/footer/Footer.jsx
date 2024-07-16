@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-4 md:mb-0">
-            <h2 className="text-6xl font-bold text-red-600 mb-2">AI-PRO</h2>
+            <h2 className="text-6xl font-bold text-[#33A7BF] mb-2">AI-PRO</h2>
             <p className="text-lg mb-2">Giá trị bền vững ∞ Kết nối tương lai</p>
             <p className="text-sm">
               Công ty Cổ phần Đầu tư Tổng hợp Hà Nội (SHN) “Luôn tâm huyết, nhiệt thành, nỗ lực hết mình để cống hiến những giá trị tốt đẹp cho cổ đông, đối tác, khách hàng và xã hội.”

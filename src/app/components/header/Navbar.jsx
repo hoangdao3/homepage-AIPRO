@@ -45,7 +45,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <h2 className="text-6xl font-bold mb-2 text-red-600">AI-PRO</h2>
+            <h2 className="text-6xl font-bold mb-2 text-[#33A7BF]">AI-PRO</h2>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"

@@ -42,7 +42,7 @@ const CollaborationForm = () => {
   }, []);
 
   return (
-    <div className="w-full bg-red-700 text-white py-12">
+    <div className="w-full bg-[#33A7BF] text-white py-12">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
         <motion.div
           ref={formRef}
@@ -78,7 +78,7 @@ const CollaborationForm = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full px-4 py-2 bg-white text-red-700 rounded-md hover:bg-gray-300 transition duration-300"
+              className="w-full px-4 py-2 bg-white text-[#33A7BF] rounded-md hover:bg-gray-300 transition duration-300"
             >
               Send information
             </button>

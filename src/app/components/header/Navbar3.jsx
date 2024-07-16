@@ -79,7 +79,7 @@ const Navbar2 = () => {
       >
         <div className="container mx-auto flex items-center justify-between p-4">
           <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <h2 className={`text-6xl font-bold mb-2 text-red-600`}>AI-PRO</h2>
+            <h2 className={`text-6xl font-bold mb-2  text-[#33A7BF]`}>AI-PRO</h2>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"
@@ -149,7 +149,9 @@ const Navbar2 = () => {
           </div>
         </Collapse>
       </MTNavbar>
-
+      <div className={pathname !== '/' ? styles.content : ''}>
+        {/* Your main content here */}
+      </div>
     </>
   );
 };

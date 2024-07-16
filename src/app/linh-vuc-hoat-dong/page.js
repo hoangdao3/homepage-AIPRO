@@ -1,3 +1,4 @@
+import AboutUs from "../components/aboutus";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
 import HeroSection from "../components/LinhVucHoatDong-1/HeroSection";
@@ -12,6 +13,8 @@ export default function Linh() {
         description="AI-PRO JOINT STOCK COMPANY"
         videoSrc="/sec1Video.mp4"
       />
+      <AboutUs/>
+
       <FeatureCard
         imageSrc="/anh1.png"
         title="01. AI Development"
