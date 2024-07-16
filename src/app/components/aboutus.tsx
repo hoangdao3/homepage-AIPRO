@@ -2,13 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
 import {
   AcademicCapIcon,
   CheckBadgeIcon,
   InboxIcon,
 } from "@heroicons/react/24/solid";
-
+import { useInView } from "react-intersection-observer";
 import FeatureCard from "./feature-card";
 
 const FEATURES = [
@@ -32,9 +31,18 @@ const FEATURES = [
 ];
 
 export function AboutUs() {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Tỉ lệ phần tử cần phải hiện diện để được coi là inView
+  });
+
   return (
     <section className="py-28 px-8">
-      <div className="container mx-auto grid grid-cols-1 place-items-center lg:grid-cols-3">
+      <div
+        ref={ref}
+        className={`container mx-auto grid grid-cols-1 place-items-center lg:grid-cols-3 transition-transform duration-1000 ease-out ${
+          inView ? 'transform scale-100 opacity-100' : 'transform scale-75 opacity-0'
+        }`}
+      >
         <div className="col-span-1 rounded-xl lg:mb-0 mb-12">
           <Image
             width={768}
@@ -45,19 +53,16 @@ export function AboutUs() {
           />
         </div>
         <div className="col-span-2 lg:pl-24">
-          <Typography variant="h2" color="blue-gray" className="mb-4">
+          <h2 className="mb-4 text-6xl font-bold text-blue-gray-900">
             Online Course
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
-          >
+          </h2>
+          <p className="mb-5 max-w-lg px-4 text-left text-lg text-gray-500 lg:px-0">
             In this comprehensive React Course, you&apos;ll delve into the world
             of React, from its fundamentals to advanced techniques. Our expert
             instructors will guide you through every step.
-          </Typography>
+          </p>
 
-          <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3 ">
+          <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3">
             {FEATURES.map(({ icon, title, description }) => (
               <FeatureCard key={title} icon={icon} title={title}>
                 {description}

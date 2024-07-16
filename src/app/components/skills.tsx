@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography } from "@material-tailwind/react";
+import React from "react";
 import {
   RectangleGroupIcon,
   FingerPrintIcon,
@@ -9,6 +9,7 @@ import {
   EyeIcon,
   DocumentTextIcon,
 } from "@heroicons/react/24/solid";
+import { useInView } from "react-intersection-observer";
 import { SkillCard } from "./skill-card";
 
 const SKILLS = [
@@ -51,22 +52,41 @@ const SKILLS = [
 ];
 
 export function Skills() {
+  const { ref: headingRef, inView: headingInView } = useInView({
+    threshold: 0.1,
+  });
+  const { ref: contentRef, inView: contentInView } = useInView({
+    threshold: 0.1,
+  });
+
   return (
     <section className="px-8 mt-20">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h1" color="blue-gray" className="mb-4 text-6xl">
+        <h1
+          ref={headingRef}
+          className={`mb-4 text-5xl font-bold text-blue-gray-900 transition-transform duration-1000 ease-out ${
+            headingInView ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-10 opacity-0'
+          }`}
+        >
           What we do
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full !text-gray-500 lg:w-10/12"
+        </h1>
+        <p
+          ref={headingRef}
+          className={`mx-auto w-full text-lg text-gray-500 lg:w-10/12 transition-transform duration-1000 ease-out ${
+            headingInView ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-10 opacity-0'
+          }`}
         >
           I&apos;m not just a developer; I&apos;m a digital dreamweaver.
           Crafting immersive online experiences is not just a job but my
           calling. Discover below how I can help you.
-        </Typography>
+        </p>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        ref={contentRef}
+        className={`container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3 transition-transform duration-1000 ease-out ${
+          contentInView ? 'transform translate-y-0 opacity-100' : 'transform translate-y-10 opacity-0'
+        }`}
+      >
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

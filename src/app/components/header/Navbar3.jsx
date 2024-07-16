@@ -79,7 +79,9 @@ const Navbar2 = () => {
       >
         <div className="container mx-auto flex items-center justify-between p-4">
           <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <h2 className={`text-6xl font-bold mb-2  text-[#33A7BF]`}>AI-PRO</h2>
+            <h2 className={`text-6xl font-bold mb-2  ${
+          !isScrolling ? "text-white" : "text-[#33A7BF]"
+        }`}>AI-PRO</h2>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"
@@ -102,7 +104,7 @@ const Navbar2 = () => {
                 <li key={item.name}>
                   <a
                     href={item.url}
-                    className={`block py-2 px-3 rounded ${textColor} hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600`}
+                    className={`block py-2 px-3 rounded ${textColor} hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#33A7BF]`}
                   >
                     {item.name}
                   </a>

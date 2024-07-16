@@ -78,7 +78,7 @@ const CollaborationForm = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full px-4 py-2 bg-white text-[#33A7BF] rounded-md hover:bg-gray-300 transition duration-300"
+              className="w-full px-4 py-2 bg-white text-black rounded-md hover:bg-gray-300 transition duration-300"
             >
               Send information
             </button>

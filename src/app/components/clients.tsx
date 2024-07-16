@@ -1,7 +1,8 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
+import { useInView } from "react-intersection-observer";
 
 const CLIENTS = [
   "coinbase",
@@ -13,12 +14,22 @@ const CLIENTS = [
 ];
 
 export function Clients() {
+  const { ref: sectionRef, inView: sectionInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
-    <section className="px-8 py-28">
+    <section
+      ref={sectionRef}
+      className={`px-8 py-28 transition-transform duration-1000 ease-out ${
+        sectionInView ? "transform scale-100 opacity-100" : "transform scale-75 opacity-0"
+      }`}
+    >
       <div className="container mx-auto text-center">
-        <Typography variant="h6" color="blue-gray" className="mb-8">
+        <h6 className="mb-8 text-5xl font-semibold text-blue-gray-900">
           Our clients
-        </Typography>
+        </h6>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
             <Image

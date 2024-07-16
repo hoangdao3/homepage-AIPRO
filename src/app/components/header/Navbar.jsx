@@ -13,7 +13,7 @@ import {
 } from "@material-tailwind/react";
 
 const Navbar = () => {
-  const [language, setLanguage] = useState("VN");
+  const [language, setLanguage] = useState("EN");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -68,7 +68,7 @@ const Navbar = () => {
                 <li key={item.name}>
                   <a
                     href={item.url}
-                    className="block py-2 px-3 rounded text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600"
+                    className="block py-2 px-3 rounded text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#33A7BF]"
                   >
                     {item.name}
                   </a>

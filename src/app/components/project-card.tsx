@@ -1,11 +1,6 @@
+import React from "react";
 import Image from "next/image";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
+import { useInView } from "react-intersection-observer";
 
 interface ProjectCardProps {
   img: string;
@@ -14,9 +9,19 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ img, title, desc }: ProjectCardProps) {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce: false,
+  });
+
   return (
-    <Card color="transparent" shadow={false}>
-      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
+    <div
+      ref={ref}
+      className={`bg-transparent shadow-none flex flex-col items-center transition-transform duration-500 ease-out ${
+        inView ? "transform scale-100 opacity-100" : "transform scale-75 opacity-0"
+      }`}
+    >
+      <div className="mx-0 mt-0 mb-6 h-48 overflow-hidden rounded-lg w-full">
         <Image
           src={img}
           alt={title}
@@ -24,24 +29,22 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           height={768}
           className="h-full w-full object-cover"
         />
-      </CardHeader>
-      <CardBody className="p-0">
+      </div>
+      <div className="p-0 text-center flex flex-col items-center flex-grow">
         <a
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
         >
-          <Typography variant="h5" className="mb-2">
-            {title}
-          </Typography>
+          <h5 className="mb-2 text-xl font-semibold">{title}</h5>
         </a>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <p className="mb-6 font-normal text-gray-500">
           {desc}
-        </Typography>
-        <Button color="gray" size="sm">
+        </p>
+        <button className="bg-gray-500 text-white py-2 px-4 rounded mt-auto">
           see details
-        </Button>
-      </CardBody>
-    </Card>
+        </button>
+      </div>
+    </div>
   );
 }
 
