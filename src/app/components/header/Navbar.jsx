@@ -25,7 +25,7 @@ const Navbar = () => {
   const handleOpen = () => setOpen((cur) => !cur);
 
   const menuItems = [
-    { name: "About AI-PRO", url: "/gioi-thieu" },
+    { name: "About", url: "/gioi-thieu" },
     { name: "Focus areas", url: "/linh-vuc-hoat-dong" },
     { name: "Projects", url: "/du-an" },
     { name: "Recruitment", url: "/tuyen-dung" },
@@ -43,9 +43,10 @@ const Navbar = () => {
         <div className="container mx-auto flex items-center justify-between p-4">
           <a
             href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
+            className="flex items-start space-x-3 rtl:space-x-reverse flex-grow-0 flex-shrink-0"
+            style={{ minWidth: "200px" }} // Adjust this value as needed
           >
-            <h2 className="text-6xl font-bold mb-2 text-[#33A7BF]">AI-PRO</h2>
+            <h2 className="text-6xl font-bold mb-2 text-[#33A7BF] mr-10">AI-PRO</h2>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"
@@ -63,7 +64,7 @@ const Navbar = () => {
             )}
           </button>
           <div className="hidden md:block md:w-auto" id="navbar-dropdown">
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-gray-900 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:mt-0 md:border-0 text-gray-900 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-4">
               {menuItems.map((item) => (
                 <li key={item.name}>
                   <a

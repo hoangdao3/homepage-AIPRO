@@ -18,7 +18,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 const menuItems = [
-  { name: "About AI-PRO", url: "/gioi-thieu" },
+  { name: "About", url: "/gioi-thieu" },
   { name: "Focus areas", url: "/linh-vuc-hoat-dong" },
   { name: "Projects", url: "/du-an" },
   { name: "Recruitment", url: "/tuyen-dung" },
@@ -78,10 +78,14 @@ const Navbar2 = () => {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between p-4">
-          <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <h2 className={`text-6xl font-bold mb-2  ${
-          !isScrolling ? "text-white" : "text-[#33A7BF]"
-        }`}>AI-PRO</h2>
+        <a
+            href="/"
+            className="flex items-start space-x-3 rtl:space-x-reverse flex-grow-0 flex-shrink-0"
+            style={{ minWidth: "200px" }} // Adjust this value as needed
+          >
+            <h2 className={`text-6xl font-bold mb-2 ${
+              !isScrolling ? "text-white" : "text-[#33A7BF]"
+            }`}>AI-PRO</h2>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"
