@@ -43,10 +43,10 @@ const Navbar = () => {
         <div className="container mx-auto flex items-center justify-between p-4">
           <a
             href="/"
-            className="flex items-start space-x-3 rtl:space-x-reverse flex-grow-0 flex-shrink-0"
+            className="flex items-center space-x-3 rtl:space-x-reverse flex-grow-0 flex-shrink-0"
             style={{ minWidth: "200px" }} // Adjust this value as needed
           >
-            <h2 className="text-6xl font-bold mb-2 text-[#33A7BF] mr-10">AI-PRO</h2>
+            <h2 className="text-6xl font-bold mb-2 text-[#33A7BF] mr-16">AI-PRO</h2>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"

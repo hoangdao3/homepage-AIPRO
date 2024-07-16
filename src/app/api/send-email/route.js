@@ -18,8 +18,8 @@ export async function POST(req) {
     // Send mail with defined transport object
     let mailOptions = {
       from: '"AI-PRO Contact Form" <tuanhhoang20037c@gmail.com>', // Sender address
-      to: 'hr-admin@aipro-tech.com', // List of receivers
-      subject: 'New Collaboration Request', // Subject line
+      to: 'hoang.dnh2003@gmail.com', // List of receivers
+      subject: `New Collaboration Request from ${email}`, // Subject line
       text: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nContent: ${content}`, // Plain text body
       html: `<p>Name: ${name}</p><p>Phone: ${phone}</p><p>Email: ${email}</p><p>Content: ${content}</p>`, // HTML body
     };

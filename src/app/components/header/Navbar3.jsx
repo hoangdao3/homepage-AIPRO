@@ -83,7 +83,7 @@ const Navbar2 = () => {
             className="flex items-start space-x-3 rtl:space-x-reverse flex-grow-0 flex-shrink-0"
             style={{ minWidth: "200px" }} // Adjust this value as needed
           >
-            <h2 className={`text-6xl font-bold mb-2 ${
+            <h2 className={`text-6xl font-bold mr-16 mb-2 ${
               !isScrolling ? "text-white" : "text-[#33A7BF]"
             }`}>AI-PRO</h2>
           </a>
