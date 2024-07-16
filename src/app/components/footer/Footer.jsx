@@ -12,7 +12,7 @@ const Footer = () => {
                 Giá trị bền vững ∞ Kết nối tương lai
               </p>
               <p className="text-sm">
-                Công ty Cổ phần Đầu tư Tổng hợp Hà Nội (SHN) “Luôn tâm huyết,
+              AI-PRO JOINT STOCK COMPANY“Luôn tâm huyết,
                 nhiệt thành, nỗ lực hết mình để cống hiến những giá trị tốt đẹp
                 cho cổ đông, đối tác, khách hàng và xã hội.”
               </p>

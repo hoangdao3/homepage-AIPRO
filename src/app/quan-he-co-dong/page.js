@@ -9,7 +9,7 @@ export default function Contact() {
       <Navbar />
       <HeroSection
         title="Quan hệ cổ đông"
-        description="Công ty Cổ phần Đầu tư Tổng hợp Hà Nội (SHN)"
+        description="AI-PRO JOINT STOCK COMPANY"
         videoSrc="/sec1Video.mp4"
       />
       <InformationDisclosure />

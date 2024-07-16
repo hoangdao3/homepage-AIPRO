@@ -13,19 +13,19 @@ import FeatureCard from "./feature-card";
 const FEATURES = [
   {
     icon: InboxIcon,
-    title: "Hands-On Projects",
+    title: "Điểm mạnh A",
     description:
       "Apply your knowledge to real-world projects, building a robust portfolio.",
   },
   {
     icon: AcademicCapIcon,
-    title: "Career Opportunities",
+    title: "Điểm mạnh B",
     description:
       "React developers are in high demand and this course is designed for you!",
   },
   {
     icon: CheckBadgeIcon,
-    title: "Flexible Learning",
+    title: "Điểm mạnh C",
     description: "Access course materials whenever it suits your schedule.",
   },
 ];
@@ -57,9 +57,7 @@ export function AboutUs() {
           AI-PRO JOINT STOCK COMPANY
           </h2>
           <p className="mb-5 max-w-lg px-4 text-left text-lg text-gray-500 lg:px-0">
-            In this comprehensive React Course, you&apos;ll delve into the world
-            of React, from its fundamentals to advanced techniques. Our expert
-            instructors will guide you through every step.
+          AI-PRO was founded on April 26, 2023. Specializing in AI technologies, the company operates within sectors including industry innovation, trade solutions, and advanced services. AI-PRO has garnered recognition both domestically and internationally for its pioneering contributions to the AI industry. - demo
           </p>
 
           <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3">

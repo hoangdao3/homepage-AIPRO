@@ -59,7 +59,7 @@ const RecruitmentSection = () => {
       <div className={styles.header}>
         <h1 className="text-4xl font-bold">Join AI-PRO Shaping the future</h1>
         <p>
-          Cám ơn bạn đã quan tâm đến việc làm tại SHN. Chúng tôi rất mong chờ
+          Cám ơn bạn đã quan tâm đến việc làm tại AI-PRO. Chúng tôi rất mong chờ
           được làm việc cùng bạn và chia sẻ những thành công đầy hứa hẹn.
         </p>
       </div>

@@ -69,14 +69,10 @@ export default function Contact() {
       <Navbar />
       <HeroSection
         title="Dự án"
-        description="Công ty Cổ phần Đầu tư Tổng hợp Hà Nội (SHN)"
+        description="AI-PRO JOINT STOCK COMPANY"
         videoSrc="/sec1Video.mp4"
       />
-      {/* <WhyChooseUs/> */}
-
       <Projects/>
-
-      {/* <ProjectShowcase projects={projects} />; */}
       <Footer />
     </>
   );

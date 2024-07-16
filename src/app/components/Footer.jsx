@@ -15,7 +15,7 @@ const Footer = () => {
             </p>
           </div>
           <p className={styles.description}>
-            Công ty Cổ phần Đầu tư Tổng hợp Hà Nội (SHN)
+          AI-PRO JOINT STOCK COMPANY
             <br />
             “Luôn tâm huyết, nhiệt thành, nỗ lực hết mình để cống hiến những giá
             trị tốt đẹp cho cổ đông, đối tác, khách hàng và xã hội.”

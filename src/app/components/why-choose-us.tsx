@@ -55,7 +55,7 @@ export function WhyChooseUs() {
           titleInView ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-10 opacity-0'
         }`}
       >
-        Why choose our course?
+        Why choose us?
       </h2>
       <p
         ref={descRef}
@@ -73,24 +73,24 @@ export function WhyChooseUs() {
         }`}
       >
         <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-          <BackgroundCard title="Expert Instructors">
+          <BackgroundCard title="Điểm mạnh 1">
             Learn from industry professionals with years of hands-on experience
             in React development.
           </BackgroundCard>
           <div className="space-y-8">
             <div className="my-4">
-              <Option icon={CloudIcon} title="React Fundamentals">
+              <Option icon={CloudIcon} title="Điểm mạnh 2">
                 Start with the basics. Understand React&apos;s core concepts,
                 component structure, and the virtual DOM.
               </Option>
             </div>
             <div className="mb-4 flex gap-4">
-              <Option icon={ChartPieIcon} title="State and Props">
+              <Option icon={ChartPieIcon} title="Điểm mạnh 2">
                 Learn how to manage component state and utilize props to pass
                 data between components.
               </Option>
             </div>
-            <Option icon={Cog6ToothIcon} title="Component Lifecycle">
+            <Option icon={Cog6ToothIcon} title="Điểm mạnh 3">
               Dive into the lifecycle of React components and harness its power
               to control your application&apos;s behavior.
             </Option>

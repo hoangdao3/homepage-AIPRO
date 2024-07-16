@@ -51,7 +51,7 @@ const SKILLS = [
   },
 ];
 
-export function Skills() {
+export function   Skills() {
   const { ref: headingRef, inView: headingInView } = useInView({
     threshold: 0.1,
   });
@@ -76,9 +76,7 @@ export function Skills() {
             headingInView ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-10 opacity-0'
           }`}
         >
-          I&apos;m not just a developer; I&apos;m a digital dreamweaver.
-          Crafting immersive online experiences is not just a job but my
-          calling. Discover below how I can help you.
+          AI-PRO specializes in cutting-edge AI development, delivering innovative solutions that drive efficiency and growth for our clients in various industries - demo.
         </p>
       </div>
       <div
