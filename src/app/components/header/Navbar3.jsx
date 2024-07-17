@@ -84,7 +84,7 @@ const Navbar2 = () => {
             style={{ minWidth: "200px" }} // Adjust this value as needed
           >
             <h2 className={`text-6xl font-bold mr-16 mb-2 ${
-              !isScrolling ? "text-white" : "text-[#33A7BF]"
+              !isScrolling ? "text-white" : "text-[#388bac]"
             }`}>AI-PRO</h2>
           </a>
           <button
@@ -119,7 +119,7 @@ const Navbar2 = () => {
           <div className="flex items-center space-x-4">
             <span className="flex items-center space-x-2">
               <MdPhone className={`h-5 w-5 ${textColor}`} />
-              <span className={textColor}>(01 - 23) 45678910 {currentPath}</span>
+              <span className={textColor}>0813-867-936 {currentPath}</span>
             </span>
             <div className={`flex items-center space-x-1 cursor-pointer ${textColor}`} onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
               <MdLanguage className={`h-5 w-5 ${textColor}`} />

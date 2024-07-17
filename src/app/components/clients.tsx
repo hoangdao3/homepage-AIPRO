@@ -5,12 +5,10 @@ import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 const CLIENTS = [
-  "coinbase",
-  "spotify",
-  "pinterest",
   "google",
   "amazon",
-  "netflix",
+  "microsoft",
+  "openAI"
 ];
 
 export function Clients() {
@@ -28,7 +26,7 @@ export function Clients() {
     >
       <div className="container mx-auto text-center">
         <h6 className="mb-8 text-5xl font-semibold text-blue-gray-900">
-          Our clients
+          Our Partner
         </h6>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
@@ -37,7 +35,7 @@ export function Clients() {
               alt={logo}
               width={768}
               height={768}
-              className="w-40"
+              className="w-40 m-4"
               src={`/logos/logo-${logo}.svg`}
             />
           ))}

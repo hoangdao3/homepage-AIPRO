@@ -46,7 +46,7 @@ const Navbar = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse flex-grow-0 flex-shrink-0"
             style={{ minWidth: "200px" }} // Adjust this value as needed
           >
-            <h2 className="text-6xl font-bold mb-2 text-[#33A7BF] mr-16">AI-PRO</h2>
+            <h2 className="text-6xl font-bold mb-2 text-[#388BAC] mr-16">AI-PRO</h2>
           </a>
           <button
             data-collapse-toggle="navbar-dropdown"
@@ -80,7 +80,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <span className="hidden md:flex items-center space-x-2">
               <MdPhone className="h-5 w-5 text-gray-900" />
-              <span className="text-gray-900">(01 - 23) 45678910</span>
+              <span className="text-gray-900">0813-867-936</span>
             </span>
             <div
               className="hidden md:flex items-center space-x-1 cursor-pointer text-gray-900"

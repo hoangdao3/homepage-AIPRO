@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div>
             <div className="mb-4 md:mb-0 w-full md:w-4/6">
-              <h2 className="text-6xl font-bold text-[#33A7BF] mb-2">AI-PRO</h2>
+              <h2 className="text-6xl font-bold text-[#388BAC] mb-2">AI-PRO</h2>
               <p className="text-md mb-2">
                 Innovating Technology ∞ Building the Future
               </p>
@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="mb-4 md:mb-0 md:mr-8">
               <div className="flex items-center mb-2">
                 <Image src="/phone.png" alt="Phone" width={32} height={32} />
-                <span className="ml-2">(00 - 00) 00000000</span>
+                <span className="ml-2">0813-867-936</span>
               </div>
               <div
                 className="flex items-center mb-2"
