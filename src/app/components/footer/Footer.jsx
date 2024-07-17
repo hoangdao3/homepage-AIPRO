@@ -49,7 +49,7 @@ const Footer = () => {
               <div className="flex space-x-4">
 
                 <a
-                  href="https://www.linkedin.com/company/ai-pro-joint-stock-company/"
+                  href="https://www.linkedin.com/company/ai-pro-joint-stock-company/about/"
                   aria-label="Linkedin"
                 >
                   <Image
@@ -59,7 +59,6 @@ const Footer = () => {
                     height={24}
                   />
                 </a>
-
               </div>
             </div>
           </div>
