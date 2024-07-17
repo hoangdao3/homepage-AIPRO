@@ -15,39 +15,39 @@ import { SkillCard } from "./skill-card";
 const SKILLS = [
   {
     icon: RectangleGroupIcon,
-    title: "Frontend Web Development:",
+    title: "AI Development :",
     children:
-      "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
+      "At AI-PRO, we specialize in developing advanced AI solutions tailored to your specific needs. Our expertise spans various AI technologies, ensuring that we deliver powerful and scalable AI systems that transform your business operations.",
   },
   {
     icon: FingerPrintIcon,
-    title: "Mobile App Development",
+    title: "Optical Character Recognition (OCR)",
     children:
-      " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
+      "Leverage the power of conversational AI with our ChatGPT development services. We create advanced chatbot solutions that can understand and generate human-like responses, improving customer engagement and support.",
   },
   {
     icon: SwatchIcon,
-    title: "Technology Stack",
+    title: "ChatGPT Development",
     children:
       "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
   },
   {
     icon: HashtagIcon,
-    title: " Web Optimization",
+    title: "AI-Powered Data Analysis",
     children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
+      "Utilize AI to transform raw data into valuable insights. Our advanced algorithms analyze data to identify patterns, trends, and predictive insights, helping you make informed decisions and stay ahead of the competition.",
   },
   {
     icon: EyeIcon,
-    title: "User-Centric Design",
+    title: "Natural Language Processing",
     children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+      "Enhance your applications with our NLP capabilities. We develop systems that understand, interpret, and generate human language, facilitating better communication and user interaction",
   },
   {
     icon: DocumentTextIcon,
-    title: "Testing and Quality Assurance",
+    title: "App and Web Development",
     children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
+      "At AI-PRO, we provide comprehensive outsourcing services for app and web development. Our team of skilled developers and designers is dedicated to delivering high-quality, scalable, and secure solutions tailored to your business needs.",
   },
 ];
 
@@ -76,7 +76,7 @@ export function   Skills() {
             headingInView ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-10 opacity-0'
           }`}
         >
-          AI-PRO specializes in cutting-edge AI development, delivering innovative solutions that drive efficiency and growth for our clients in various industries - demo.
+          AI-PRO specializes in cutting-edge AI development, delivering innovative solutions that drive efficiency and growth for our clients in various industries.
         </p>
       </div>
       <div

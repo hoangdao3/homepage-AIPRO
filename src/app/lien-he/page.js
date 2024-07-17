@@ -9,7 +9,7 @@ export default function Contact() {
       <Navbar />
       <HeroSection
         title="Contact"
-        description="Contact SHN to become our partner"
+        description="Contact AI-PRO to become our partner"
         videoSrc="/sec1Video.mp4"
       />
       <ContactInfo/>

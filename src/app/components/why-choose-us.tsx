@@ -63,8 +63,7 @@ export function WhyChooseUs() {
           descInView ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-10 opacity-0'
         }`}
       >
-        Discover the unique advantages, benefits, and standout features that set
-        our course apart from the rest.
+        Discover the unique advantages, benefits, and standout features that set our AI solutions apart from the rest..
       </p>
       <div
         ref={contentRef}
@@ -73,26 +72,24 @@ export function WhyChooseUs() {
         }`}
       >
         <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-          <BackgroundCard title="Điểm mạnh 1">
-            Learn from industry professionals with years of hands-on experience
-            in React development.
+          <BackgroundCard title="Industry Expertise">
+          Learn from industry professionals with years of hands-on experience in AI development and implementation.
           </BackgroundCard>
           <div className="space-y-8">
             <div className="my-4">
-              <Option icon={CloudIcon} title="Điểm mạnh 2">
-                Start with the basics. Understand React&apos;s core concepts,
-                component structure, and the virtual DOM.
+              <Option icon={CloudIcon} title="Foundational Knowledge">
+              Start with the basics. Understand core AI concepts, algorithm structures, and the principles of machine learning and deep learning.
               </Option>
             </div>
             <div className="mb-4 flex gap-4">
-              <Option icon={ChartPieIcon} title="Điểm mạnh 2">
+              <Option icon={ChartPieIcon} title="Component Management">
                 Learn how to manage component state and utilize props to pass
                 data between components.
               </Option>
             </div>
-            <Option icon={Cog6ToothIcon} title="Điểm mạnh 3">
-              Dive into the lifecycle of React components and harness its power
-              to control your application&apos;s behavior.
+            <Option icon={Cog6ToothIcon} title="Lifecycle Mastery">
+            Dive into the lifecycle of AI projects and harness the power of AI
+             to control and optimize your business processes and operations.
             </Option>
           </div>
         </div>

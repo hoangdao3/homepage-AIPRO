@@ -13,20 +13,20 @@ import FeatureCard from "./feature-card";
 const FEATURES = [
   {
     icon: InboxIcon,
-    title: "Điểm mạnh A",
+    title: "Innovation",
     description:
-      "Apply your knowledge to real-world projects, building a robust portfolio.",
+      "Harness cutting-edge AI tools and technologies to stay ahead in the competitive market.",
   },
   {
     icon: AcademicCapIcon,
-    title: "Điểm mạnh B",
+    title: "Collaboration",
     description:
-      "React developers are in high demand and this course is designed for you!",
+      "Work with a team of experts dedicated to continuous innovation and excellence.",
   },
   {
     icon: CheckBadgeIcon,
-    title: "Điểm mạnh C",
-    description: "Access course materials whenever it suits your schedule.",
+    title: "Expertise",
+    description: "Benefit from the vast experience and deep knowledge of our seasoned AI professionals.",
   },
 ];
 
@@ -47,7 +47,7 @@ export function AboutUs() {
           <Image
             width={768}
             height={500}
-            src="/image/online-course.png"
+            src="/image/avt.png"
             className="h-full max-h-[500px] w-full object-cover scale-110"
             alt="online course"
           />
@@ -57,7 +57,7 @@ export function AboutUs() {
           AI-PRO JOINT STOCK COMPANY
           </h2>
           <p className="mb-5 max-w-lg px-4 text-left text-lg text-gray-500 lg:px-0">
-          AI-PRO was founded on April 26, 2023. Specializing in AI technologies, the company operates within sectors including industry innovation, trade solutions, and advanced services. AI-PRO has garnered recognition both domestically and internationally for its pioneering contributions to the AI industry. - demo
+          Founded on April 26, 2023, AI-PRO is a leader in AI technologies, specializing in industry innovation, trade solutions, and advanced services. The company is internationally recognized for its groundbreaking contributions to the AI field.
           </p>
 
           <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3">

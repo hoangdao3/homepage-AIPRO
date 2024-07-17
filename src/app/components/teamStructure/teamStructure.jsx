@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
@@ -36,7 +36,7 @@ const LeadershipTeam = ({ title, rows }) => {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">
-          ĐỘI NGŨ LÃNH ĐẠO
+          LEADERSHIP TEAM
         </h2>
         <p className="text-center text-gray-500">{title}</p>
         <div className="mt-10 flex flex-col items-center space-y-16">

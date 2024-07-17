@@ -1,47 +1,51 @@
+"use client";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
 import HeroSection from "../components/LinhVucHoatDong-1/HeroSection";
 import CompanyIntroduction from "../components/CompanyInfo/CompanyIntroduction";
 import VisionMissionValues from "../components/VisionMissionValues/VisionMissionValues";
-import Teams from "../components/OurTeam/OurTeam"
-import LeadershipTeam from "../components/teamStructure/teamStructure"
+import Teams from "../components/OurTeam/OurTeam";
+import LeadershipTeam from "../components/teamStructure/teamStructure";
+
 const rows = [
   [
     {
-      name: "Hoàng Trọng Diễm",
-      role: "CHỦ TỊCH HỘI ĐỒNG QUẢN TRỊ",
+      name: "Hoang Trong Diem",
+      role: "CHAIRMAN OF THE BOARD OF DIRECTORS",
       imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   ],
   [
     {
-      name: "Lê Hữu Tú",
-      role: "THÀNH VIÊN HỘI ĐỒNG QUẢN TRỊ",
+      name: "Le Huu Tu",
+      role: "MEMBER OF THE BOARD OF DIRECTORS",
       imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
     {
-      name: "Vũ Thắng",
-      role: "THÀNH VIÊN HỘI ĐỒNG QUẢN TRỊ",
+      name: "Vu Thang",
+      role: "MEMBER OF THE BOARD OF DIRECTORS",
       imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   ],
   [
     {
-      name: "Lê Hữu Tú",
-      role: "THÀNH VIÊN HỘI ĐỒNG QUẢN TRỊ",
+      name: "Le Huu Tu",
+      role: "MEMBER OF THE BOARD OF DIRECTORS",
       imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
     {
-      name: "Vũ Thắng",
-      role: "THÀNH VIÊN HỘI ĐỒNG QUẢN TRỊ",
+      name: "Vu Thang",
+      role: "MEMBER OF THE BOARD OF DIRECTORS",
       imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },    {
-      name: "Vũ Thắng",
-      role: "THÀNH VIÊN HỘI ĐỒNG QUẢN TRỊ",
+    },
+    {
+      name: "Vu Thang",
+      role: "MEMBER OF THE BOARD OF DIRECTORS",
       imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   ],
 ];
+
 export default function Home() {
   return (
     <div>
@@ -60,10 +64,10 @@ export default function Home() {
       <CompanyIntroduction
         imageUrl="/team1.png"
         title="Development Orientation"
-        description="AI-PRO Joint Stock Company was established on June 26, 2023. The company specializes in the field of artificial intelligence (AI). AI-PRO has established a strong presence in both domestic and international markets with its innovative AI solutions. Guided by the motto.Sustainable Value – Connecting the Future, AI-PRO has assembled a leadership team with extensive experience and a dynamic, professional staff, forming a robust collective that successfully achieves the company's production and business goals."
+        description="AI-PRO Joint Stock Company was established on June 26, 2023. The company specializes in the field of artificial intelligence (AI). AI-PRO has established a strong presence in both domestic and international markets with its innovative AI solutions. Guided by the motto 'Sustainable Value – Connecting the Future,' AI-PRO has assembled a leadership team with extensive experience and a dynamic, professional staff, forming a robust collective that successfully achieves the company's production and business goals."
       />
-      <Teams/>
-      <LeadershipTeam title="HỘI ĐỒNG QUẢN TRỊ" rows={rows} />;
+      <Teams />
+      <LeadershipTeam title="BOARD OF DIRECTORS" rows={rows} />
       <Footer />
     </div>
   );

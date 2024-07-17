@@ -30,7 +30,7 @@ function Hero() {
                 : 'transform -translate-y-10 opacity-0'
             }`}
           >
-            Introduction,...IntroductionIntroduction
+           Welcome to AI-PRO
           </h2>
           <p
             ref={paragraphRef}
@@ -40,9 +40,7 @@ function Hero() {
                 : 'transform translate-y-10 opacity-0'
             }`}
           >
-            Our React Course is your gateway to becoming a proficient React
-            developer. Learn to build dynamic and interactive web applications
-            using one of the most popular JavaScript libraries in the industry.
+            At AI-PRO, we specialize in providing cutting-edge AI solutions tailored to meet the unique needs of our clients. Our team of experts is dedicated to developing innovative technologies that transform industries and drive growth. From machine learning to natural language processing, our comprehensive suite of services ensures that we remain at the forefront of AI advancements.
           </p>
           <div
             ref={linkRef}

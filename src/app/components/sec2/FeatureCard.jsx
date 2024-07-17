@@ -43,9 +43,9 @@ const FeatureCard = ({ imageSrc, title, description, buttonText, buttonLink, ima
         />
       </div>
       <div className={`w-full md:w-1/2 p-8 ${isVisible ? (imagePosition === 1 ? styles.appearFromRight : styles.appearFromCenterRight) : ''}`}>
-        <h2 className="text-red-500 text-xl font-bold mb-2">{title}</h2>
+        <h2 className="text-black text-xl font-bold mb-2">{title}</h2>
         <p className="text-gray-700 mb-4">{description}</p>
-        <a href={buttonLink} className="inline-block bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300">
+        <a href={buttonLink} className="inline-block bg-[#33A7BF] text-white px-4 py-2 rounded-md hover:bg-[#33A7BF] transition duration-300">
           {buttonText} &rarr;
         </a>
       </div>

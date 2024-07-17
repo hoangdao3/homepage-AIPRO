@@ -3,22 +3,22 @@ import React, { useEffect, useRef } from 'react';
 
 const people = [
   {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
+    name: "Mohamed Sa tị",
+    role: "GOAT",
     imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "https://images.news18.com/ibnlive/uploads/2024/07/lionel-messi-crying-2024-07-376990b8e6227d927d72d89f834a2e54.jpg",
+  },
+  {
+    name: "RI văn đỗ",
+    role: "Phó goat",
+    imageUrl:
+      "https://media.gettyimages.com/id/545945904/photo/topshot-portugals-forward-cristiano-ronaldo-reacts-as-portugal-beats-france-1-0-to-clinch-the.jpg?s=612x612&w=gi&k=20&c=w-3CUztotSMCZ0PPs8yOcaretcfftT8-O5JQ9mRmdBw=",
   },
   {
     name: "Leslie Alexander",
     role: "Co-Founder / CEO",
     imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-  },
-  {
-    name: "Leslie Alexander",
-    role: "Co-Founder / CEO",
-    imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ8_cxo6GVvUZWkm-g5nIM83qdA9dUiB-T2A&s",
   },
   {
     name: "Leslie Alexander",
@@ -99,8 +99,7 @@ export default function Teams() {
             ref={descriptionRef}
             className="mt-6 text-lg leading-8 text-gray-600 opacity-0 transition-opacity duration-2000"
           >
-            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
-            elementum enim vitae ullamcorper suspendisse.
+            Our leadership team is composed of experienced professionals who are dedicated to driving innovation and excellence.
           </p>
         </div>
         <ul

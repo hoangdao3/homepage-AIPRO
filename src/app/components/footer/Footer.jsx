@@ -9,14 +9,12 @@ const Footer = () => {
             <div className="mb-4 md:mb-0 w-full md:w-4/6">
               <h2 className="text-6xl font-bold text-[#33A7BF] mb-2">AI-PRO</h2>
               <p className="text-md mb-2">
-                Giá trị bền vững ∞ Kết nối tương lai
+                Innovating Technology ∞ Building the Future
               </p>
               <p className="text-sm">
-              AI-PRO JOINT STOCK COMPANY“Luôn tâm huyết,
-                nhiệt thành, nỗ lực hết mình để cống hiến những giá trị tốt đẹp
-                cho cổ đông, đối tác, khách hàng và xã hội.”
+              We are always passionate, dedicated, and strive to contribute the best values to our shareholders, partners, customers, and society.
               </p>
-              <p className="text-xs mt-4">© Bản quyền thuộc về SHN</p>
+              <p className="text-xs mt-4">© Copyright belongs to AI-PRO</p>
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between w-full md:w-auto">
@@ -49,17 +47,7 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-2">Social Media</h3>
               <p className="mb-2">Follow us on social networking fanpages</p>
               <div className="flex space-x-4">
-                <a
-                  href="https://www.youtube.com/watch?v=GBIIQ0kP15E"
-                  aria-label="YouTube"
-                >
-                  <Image
-                    src="/youtube.png"
-                    alt="YouTube"
-                    width={24}
-                    height={24}
-                  />
-                </a>
+
                 <a
                   href="https://www.youtube.com/watch?v=GBIIQ0kP15E"
                   aria-label="Facebook"
@@ -67,6 +55,17 @@ const Footer = () => {
                   <Image
                     src="/facebook.png"
                     alt="Facebook"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=GBIIQ0kP15E"
+                  aria-label="YouTube"
+                >
+                  <Image
+                    src="/youtube.png"
+                    alt="YouTube"
                     width={24}
                     height={24}
                   />
