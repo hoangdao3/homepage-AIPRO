@@ -1,0 +1,60 @@
+/* FeatureCard.module.css */
+@keyframes appearFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-15%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes appearFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(15%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes appearFromCenterLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-15%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes appearFromCenterRight {
+    0% {
+      opacity: 0;
+      transform: translateX(15%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .appearFromLeft {
+    animation: appearFromLeft 1s ease-out forwards;
+  }
+
+  .appearFromRight {
+    animation: appearFromRight 1s ease-out forwards;
+  }
+
+  .appearFromCenterLeft {
+    animation: appearFromCenterLeft 1s ease-out forwards;
+  }
+
+  .appearFromCenterRight {
+    animation: appearFromCenterRight 1s ease-out forwards;
+  }

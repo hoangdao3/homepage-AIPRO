@@ -1,0 +1,119 @@
+.footer {
+    /* background-image: url('/background.jpg'); */
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px 40px; /* Increase top padding here */
+    border-top: 1px solid #eaeaea;
+
+    width: 100%;
+    height: 400px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .companyInfo {
+    flex: 1;
+    align-items: center;
+    min-width: 200px;
+    max-width: 400px;
+    margin-left: 300px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .SHN {
+    font-size: 55px;
+    text-align: left;
+    color: #ff0000;
+    margin: 0;
+    margin-left: 60px;
+  }
+  .slogan {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    font-weight: 800;
+  }
+
+  .description {
+    font-size: 18px;
+    color: #565e64;
+    margin-bottom: 20px;
+    font-family: Lato;
+  }
+
+  .contactInfo {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+
+  .contactColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+
+  .contactIcon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+
+  .contactLabel {
+    color: red;
+    font-weight: bold;
+  }
+
+  .socialMedia {
+    flex: 1;
+    min-width: 200px;
+    margin-left: 30px;
+  }
+
+  .socialMedia h3 {
+    font-size: 24px;
+    color: #41464b;
+    font-weight: 800;
+    font-family: Open Sans;
+    margin-bottom: 10px;
+  }
+
+  .socialMedia p {
+    font-size: 18px;
+    color: #555;
+    font-family: Lato;
+    margin-bottom: 20px;
+  }
+
+  .icons a {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .icons img {
+    width: 48px;
+    height: 48px;
+  }
