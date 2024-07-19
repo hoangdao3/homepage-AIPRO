@@ -27,7 +27,6 @@ const RecruitmentSection = () => {
       }
     };
 
-    // Check if section is already in view on initial load
     handleScroll();
 
     window.addEventListener('scroll', handleScroll);
