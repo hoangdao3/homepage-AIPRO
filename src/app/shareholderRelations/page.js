@@ -1,6 +1,6 @@
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
-import HeroSection from "../components/LinhVucHoatDong-1/HeroSection";
+import HeroSection from "../components/areasOfOperation/HeroSection";
 import InformationDisclosure from "../components/shareholderRelations/qhcd";
 
 export default function Contact() {
