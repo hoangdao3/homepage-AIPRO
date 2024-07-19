@@ -10,7 +10,7 @@ import {
   UsersIcon,
 } from "@heroicons/react/24/solid";
 import { useInView } from "react-intersection-observer";
-import BackgroundCard from "./background-card"; // Ensure this path is correct
+import BackgroundCard from "./background-card";
 
 interface OptionProps {
   icon: React.ElementType;

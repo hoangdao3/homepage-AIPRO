@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import styles from './FeatureCard.module.css'; // Import the CSS module
+import styles from './FeatureCard.module.css';
 
 const FeatureCard = ({ imageSrc, title, description, buttonText, buttonLink, imagePosition }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,7 +13,7 @@ const FeatureCard = ({ imageSrc, title, description, buttonText, buttonLink, ima
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.1, // Adjust this value based on when you want the animation to trigger
+        threshold: 0.1,
       }
     );
 

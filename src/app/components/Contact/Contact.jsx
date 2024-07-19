@@ -33,7 +33,7 @@ const CollaborationForm = () => {
 
       if (response.ok) {
         alert('Information sent successfully');
-        event.target.reset(); // Clear the form after successful submission
+        event.target.reset();
       } else {
         alert('Failed to send information');
       }

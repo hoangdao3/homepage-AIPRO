@@ -32,7 +32,7 @@ const FEATURES = [
 
 export function AboutUs() {
   const { ref, inView } = useInView({
-    threshold: 0.1, // Tỉ lệ phần tử cần phải hiện diện để được coi là inView
+    threshold: 0.1,
   });
 
   return (

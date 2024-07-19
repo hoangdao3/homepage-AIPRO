@@ -31,7 +31,7 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({ projects }) => {
   const scrollToIndex = (index: number) => {
     if (listRef.current) {
       listRef.current.scrollTo({
-        top: index * 150, // Adjust height based on your item size including margin
+        top: index * 150,
         behavior: 'smooth'
       });
     }

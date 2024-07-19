@@ -97,7 +97,6 @@ const mainNews = [
       "Phó Thủ tướng Trần Hồng Hà gợi mở một số giải pháp xử lý những thửa đất chưa được đăng ký, cấp giấy chứng nhận như tiếp tục đơn giản hóa thủ tục; miễn...",
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gBFQUzHGPmzWRpMe2CDA0UjUnEAYSsTJsQ&s",
   },
-  // More articles...
 ];
 const categories = [
     {

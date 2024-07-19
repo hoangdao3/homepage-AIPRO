@@ -44,7 +44,7 @@ const Navbar = () => {
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse flex-grow-0 flex-shrink-0"
-            style={{ minWidth: "200px" }} // Adjust this value as needed
+            style={{ minWidth: "200px" }}
           >
             <h2 className="text-6xl font-bold mb-2 text-[#388BAC] mr-16">AI-PRO</h2>
           </a>
@@ -134,9 +134,6 @@ const Navbar = () => {
           </div>
         </Collapse>
       </MTNavbar>
-      <div className="pt-20"> {/* Adjust this padding as needed */}
-        {/* Your main content goes here */}
-      </div>
     </>
   );
 };

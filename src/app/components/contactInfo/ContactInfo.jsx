@@ -45,7 +45,7 @@ const ContactInfo = () => {
     <div
       className="container mx-auto p-6"
       style={{
-        backgroundImage: '/anh1.png', // Replace with your background image path
+        backgroundImage: '/anh1.png',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

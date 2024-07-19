@@ -31,7 +31,7 @@
 .recruitmentSection {
   position: relative;
   z-index: 1;
-  margin-top: 2rem; /* Add margin to ensure it doesn't overlap with other sections */
+  margin-top: 2rem;
 }
 
 .statCard {
@@ -52,7 +52,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #f0f0f0; /* Adjust background color as needed */
+  background-color: #f0f0f0;
   margin-right: 0.5rem;
 }
 
@@ -66,6 +66,6 @@
 }
 
 .textContainer {
-  margin-right: 20px; /* Adjust this margin to move the text closer to the image */
+  margin-right: 20px;
   text-align: left;
 }

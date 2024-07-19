@@ -48,7 +48,7 @@
   }
 
   .header p {
-    max-width: 640px; /* Adjust this width to make the text wrap into two lines */
+    max-width: 640px;
     margin: 0 auto;
   }
 

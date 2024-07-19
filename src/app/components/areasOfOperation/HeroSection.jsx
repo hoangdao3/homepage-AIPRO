@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
-import styles from './herosection.module.css'; // Import the CSS module
+import styles from './herosection.module.css';
 
 const HeroSection = ({ title, description, videoSrc }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +12,7 @@ const HeroSection = ({ title, description, videoSrc }) => {
         setIsVisible(entry.isIntersecting);
       },
       {
-        threshold: 0.05, // Adjust this value based on when you want the animation to trigger
+        threshold: 0.05,
       }
     );
 
@@ -32,7 +32,7 @@ const HeroSection = ({ title, description, videoSrc }) => {
       ref={sectionRef}
       className={`relative w-full h-[300px] bg-cover bg-center flex items-center justify-center ${
         isVisible ? 'animate-appear' : 'animate-disappear'
-      } ${styles['hero-section']}`} // Added CSS class here
+      } ${styles['hero-section']}`}
     >
       <video
         autoPlay

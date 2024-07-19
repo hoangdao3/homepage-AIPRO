@@ -6,11 +6,11 @@ export async function POST(req) {
 
     let transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
-      port: 587, // Gmail SMTP port for TLS
-      secure: false, // Use TLS
+      port: 587,
+      secure: false,
       auth: {
-        user: process.env.MAIL, // Your Gmail email
-        pass: process.env.PASSWORD, // Your Gmail App Password
+        user: process.env.MAIL,
+        pass: process.env.PASSWORD,
       },
     });
 
