@@ -11,11 +11,16 @@ const CollaborationForm = () => {
     event.preventDefault();
 
     const formData = {
-      name: event.target.name.value,
-      phone: event.target.phone.value,
-      email: event.target.email.value,
-      content: event.target.content.value,
+      name: event.target.name.value.trim(),
+      phone: event.target.phone.value.trim(),
+      email: event.target.email.value.trim(),
+      content: event.target.content.value.trim(),
     };
+
+    if (!formData.name || !formData.phone || !formData.email || !formData.content) {
+      alert('Please fill out all fields before submitting.');
+      return;
+    }
 
     try {
       const response = await fetch('/api/send-email', {
@@ -28,6 +33,7 @@ const CollaborationForm = () => {
 
       if (response.ok) {
         alert('Information sent successfully');
+        event.target.reset(); // Clear the form after successful submission
       } else {
         alert('Failed to send information');
       }

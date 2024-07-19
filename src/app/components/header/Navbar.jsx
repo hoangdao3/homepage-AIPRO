@@ -25,10 +25,10 @@ const Navbar = () => {
   const handleOpen = () => setOpen((cur) => !cur);
 
   const menuItems = [
-    { name: "About", url: "/gioi-thieu" },
-    { name: "Focus areas", url: "/linh-vuc-hoat-dong" },
-    { name: "Projects", url: "/du-an" },
-    { name: "Recruitment", url: "/tuyen-dung" },
+    { name: "About", url: "/introduction" },
+    { name: "Focus areas", url: "/areasOfOperation" },
+    { name: "Projects", url: "/projects" },
+    { name: "Recruitment", url: "/recruitment" },
     { name: "Contact us", url: "/lien-he" },
   ];
 

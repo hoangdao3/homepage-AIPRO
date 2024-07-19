@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { MdLanguage, MdKeyboardArrowDown, MdPhone, MdSearch } from "react-icons/md";
 import { usePathname } from 'next/navigation'
-import styles from "./navbar.module.css";  // Corrected path
-import { useRouter } from "next/navigation"; // Correct import
+import styles from "./navbar.module.css";
+import { useRouter } from "next/navigation";
 import {
   Navbar as MTNavbar,
   Collapse,
@@ -18,15 +18,15 @@ import {
 } from "@heroicons/react/24/solid";
 
 const menuItems = [
-  { name: "About", url: "/gioi-thieu" },
-  { name: "Focus areas", url: "/linh-vuc-hoat-dong" },
-  { name: "Projects", url: "/du-an" },
-  { name: "Recruitment", url: "/tuyen-dung" },
+  { name: "About", url: "/introduction" },
+  { name: "Focus areas", url: "/areasOfOperation" },
+  { name: "Projects", url: "/projects" },
+  { name: "Recruitment", url: "/recruitment" },
   { name: "Contact us", url: "/lien-he" },
 ];
 
 const Navbar2 = () => {
-  const router = useRouter(); // Ensure useRouter is correctly imported and used
+  const router = useRouter();
   const [language, setLanguage] = useState("EN");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [open, setOpen] = useState(false);
@@ -57,7 +57,6 @@ const Navbar2 = () => {
       }
     };
 
-    // Check scroll position on mount
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
@@ -81,7 +80,7 @@ const Navbar2 = () => {
         <a
             href="/"
             className="flex items-start space-x-3 rtl:space-x-reverse flex-grow-0 flex-shrink-0"
-            style={{ minWidth: "200px" }} // Adjust this value as needed
+            style={{ minWidth: "200px" }}
           >
             <h2 className={`text-6xl font-bold mr-16 mb-2 ${
               !isScrolling ? "text-white" : "text-[#388bac]"
@@ -155,9 +154,6 @@ const Navbar2 = () => {
           </div>
         </Collapse>
       </MTNavbar>
-      <div className={pathname !== '/' ? styles.content : ''}>
-        {/* Your main content here */}
-      </div>
     </>
   );
 };

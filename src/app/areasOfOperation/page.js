@@ -1,7 +1,7 @@
 import AboutUs from "../components/aboutus";
 import Footer from "../components/footer/Footer";
 import Navbar from "../components/header/Navbar";
-import HeroSection from "../components/LinhVucHoatDong-1/HeroSection";
+import HeroSection from "../components/areasOfOperation/HeroSection";
 import FeatureCard from "../components/sec2/FeatureCard";
 
 export default function Linh() {

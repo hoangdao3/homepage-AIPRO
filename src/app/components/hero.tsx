@@ -51,7 +51,7 @@ function Hero() {
             }`}
           >
             <a
-              href="/gioi-thieu"
+              href="/introduction"
               className="inline-block px-6 py-3 bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white font-semibold rounded shadow-md transition duration-300 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50"
             >
               About us
