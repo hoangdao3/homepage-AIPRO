@@ -64,19 +64,20 @@ const Navbar = () => {
             )}
           </button>
           <div className="hidden md:block md:w-auto" id="navbar-dropdown">
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:mt-0 md:border-0 text-gray-900 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-4">
-              {menuItems.map((item) => (
-                <li key={item.name}>
-                  <a
-                    href={item.url}
-                    className="block py-2 px-3 rounded text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#33A7BF]"
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+  <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:mt-0 md:border-0 text-gray-900 md:space-x-4">
+    {menuItems.map((item) => (
+      <li key={item.name}>
+        <a
+          href={item.url}
+          className="block py-2 px-3 rounded text-gray-900  md:hover:bg-transparent md:hover:text-[#33A7BF]"
+        >
+          {item.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
           <div className="flex items-center space-x-4">
             <span className="hidden md:flex items-center space-x-2">
               <MdPhone className="h-5 w-5 text-gray-900" />
