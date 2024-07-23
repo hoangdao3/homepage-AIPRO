@@ -64,7 +64,7 @@ const Navbar = () => {
             )}
           </button>
           <div className="hidden md:block md:w-auto" id="navbar-dropdown">
-            <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:flex-row md:mt-0 md:border-0 text-gray-900 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 md:space-x-4">
+                        <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white md:bg-transparent md:flex-row md:mt-0 md:border-0 text-gray-900">
               {menuItems.map((item) => (
                 <li key={item.name}>
                   <a
